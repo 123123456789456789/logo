@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+.box{
+	width: 800px;
+	height: 531px;
+	border: 1px solid red;
+	margin: 50px auto;
+	overflow: hidden;
+	position: relative;
+}
+.pic{
+	width: 800px;
+	height: 531px;
+}
+.box>.pic>ul{
+	width: 500%;
+	height: 531px;
+	position: relative;
+}
+.box>.pic>ul>li{
+	width: 800px;
+	height: 531px;
+	float: left;
+	
+}
+.num{
+	width: 290px;
+	height: 50px;
+	position: absolute;
+	bottom: 30px;
+	left: 30%;
+}
+.num>ul>li{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background: black;
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+.num>ul>.active{
+	background: red;
+	opacity: .5;
+}
+.num>ul>li:nth-child(n+2){/*孩子之间有间隔*/
+	margin-left: 10px;
+}
+.jian{
+	position: absolute;
+	left: 0px;
+	top: 45%;
+	display: none;
+}
+.jian>span{
+	display:block;
+	width: 50px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 42px;
+	background: black;
+	opacity: .5;
+	position: absolute;
+	color: white;
+	cursor: pointer;
+	
+}
+.jian>span:hover{
+	background: red;
+	opacity: .5;
+}
+#right{
+	left: 750px;
+}
